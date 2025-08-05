@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री हनुमान आरती | भक्ति-सागर</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tiro Devanagari Hindi', serif; background-color: #FFF8E1; color: #424242; }
+        .active-nav { background-color: #FFAB40; color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .nav-item { transition: all 0.3s ease; }
+        .nav-item:hover { background-color: #FFD180; color: #424242; }
+        .content-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 224, 178, 0.5); }
+        audio { width: 50%; margin-top: 1rem; border-radius: 9999px; border: solid #FFAB40; }
+    </style>
+</head>
+<body class="bg-cover bg-center bg-fixed" style="background-image: url('../assets/images/Hanuman.png');">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center mb-8">
+            <a href="../index.html" class="text-4xl md:text-6xl font-bold text-[#FF6F00] tracking-wide">भक्ति-सागर</a>
+        </header>
+
+        <nav class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-4 mb-8">
+            
+            <a href="./chalisa.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">हनुमान चालीसा</a>
+            <a href="./ashtak.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">संकटमोचन</a>
+            <a href="./baan.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">बजरंग बाण</a>
+            <a href="./stuti.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">श्री राम स्तुति</a>
+            <a href="./aarti.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">हनुमान आरती</a>
+        </nav>
+
+
+        <main class="content-card p-6 md:p-10 rounded-2xl shadow-xl">
+            
+            <h2 class="text-3xl font-bold mb-6 text-center text-[#FF8F00]">श्री हनुमान आरती</h2>
+            <audio controls src="../assets/audio/Shree_Hanuman_Ji_Ki_Aarti (1).mp3">
+                Hanuma Chalisa
+            </audio>
+            <div class="text-lg leading-loose text-justify space-y-4 ">
+                <p>आरती कीजै हनुमान लला की । दुष्ट दलन रघुनाथ कला की ॥<br>
+                जाके बल से गिरिवर काँपे । रोग दोष जाके निकट न झाँके ॥</p>
+                <p>अंजनि पुत्र महा बलदाई । संतन के प्रभु सदा सहाई ॥<br>
+                आरती कीजै हनुमान लला की ॥</p>
+                <p>दे बीरा रघुनाथ पठाए । लंका जारि सिया सुधि लाए ॥<br>
+                लंका सो कोट समुद्र सी खाई । जात पवनसुत बार न लाई ॥<br>
+                आरती कीजै हनुमान लला की ॥</p>
+                <p>लंका जारि असुर संहारे । सियारामजी के काज सँवारे ॥<br>
+                लक्ष्मण मूर्छित पड़े सकारे । आनि सजीवन प्रान उबारे ॥<br>
+                आरती कीजै हनुमान लला की ॥</p>
+                <p>पैठि पाताल तोरि जम-कारे । अहिरावन की भुजा उखारे ॥<br>
+                बाएँ भुजा असुर दल मारे । दहिने भुजा संतजन तारे ॥<br>
+                आरती कीजै हनुमान लला की ॥</p>
+                <p>सुर नर मुनि आरती उतारें । जय जय जय हनुमान उचारें ॥<br>
+                कंचन थार कपूर लौ छाई । आरति करत अंजना माई ॥<br>
+                आरती कीजै हनुमान लला की ॥</p>
+                <p>जो हनुमानजी की आरति गावै । बसि बैकुंठ परम पद पावै ॥<br>
+                आरती कीजै हनुमान लला की । दुष्ट दलन रघुनाथ कला की ॥</p>
+            </div>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500">
+            <p>&copy; <span id="year"></span> भक्ति-सागर | सभी अधिकार सुरक्षित</p>
+        </footer>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

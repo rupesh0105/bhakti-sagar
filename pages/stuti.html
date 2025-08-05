@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री राम स्तुति | भक्ति-सागर</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tiro Devanagari Hindi', serif; background-color: #FFF8E1; color: #424242; }
+        .active-nav { background-color: #FFAB40; color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .nav-item { transition: all 0.3s ease; }
+        .nav-item:hover { background-color: #FFD180; color: #424242; }
+        .content-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 224, 178, 0.5); }
+        audio { width: 50%; margin-top: 1rem; border-radius: 9999px; border: solid #FFAB40; }
+    </style>
+</head>
+<body class="bg-cover bg-center bg-fixed" style="background-image: url('../assets/images/Hanuman.png');">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center mb-8">
+            <a href="../index.html" class="text-4xl md:text-6xl font-bold text-[#FF6F00] tracking-wide">भक्ति-सागर</a>
+        </header>
+
+        <nav class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-4 mb-8">
+            <a href="./chalisa.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">हनुमान चालीसा</a>
+            <a href="./ashtak.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">संकटमोचन</a>
+            <a href="./baan.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">बजरंग बाण</a>
+            <a href="./stuti.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">श्री राम स्तुति</a>
+            <a href="./aarti.html" class="nav-item p-3 rounded-lg font-semibold text-center cursor-pointer bg-white shadow">हनुमान आरती</a>
+        </nav>
+
+        <main class="content-card p-6 md:p-10 rounded-2xl shadow-xl">
+            <h2 class="text-3xl font-bold mb-6 text-center text-[#FF8F00]">श्री राम स्तुति</h2>
+            <audio controls src="../assets/audio/stuti.mp3">
+                Hanuma Chalisa
+            </audio>
+            
+            <div class="text-lg leading-loose text-justify space-y-4 py-8   ">
+                <p>श्री राम चंद्र कृपालु भजमन हरण भाव भय दारुणम् ।<br>
+                नवकंज लोचन कंज मुखकर कंज पद कंजारुणम् ॥१॥</p>
+                <p>कंदर्प अगणित अमित छवि नव नील नीरज सुन्दरम् ।<br>
+                पटपीत मानहु तडित रुचि शुचि नोमि जनक सुतावरम् ॥२॥</p>
+                <p>भजु दीन बंधु दिनेश दानव दैत्य वंश निकंदनम् ।<br>
+                रघुनंद आनंद कंद कौशल चंद दशरथ नन्दनम् ॥३॥</p>
+                <p>सिर मुकुट कुंडल तिलक चारु उदारू अंग विभूषणं ।<br>
+                आजानु भुज शर चाप धर संग्राम जित खरदूषणं ॥४॥</p>
+                <p>इति वदति तुलसीदास शंकर शेष मुनि मन रंजनम् ।<br>
+                मम हृदय कंज निवास कुरु कामादि खल दल गंजनम् ॥५॥</p>
+                <p>मनु जाहि राचेऊ मिलिहि सो बरु सहज सुंदर सांवरो ।<br>
+                करुणा निधान सुजान सिलु सनेहु जानत रावरो ॥६॥</p>
+                <p>एही भांती गौरी असीस सुनी सिय सहित हिय हरषी अली ।<br>
+                तुलसी भवानी पूजी पुनी पुनी मुदित मन मंदिर चली ॥७॥</p>
+                <p><strong>॥ दोहा ॥</strong><br>
+                जानी गौरी अनुकूल सिय हिय हरषु न जाइ कहि ।<br>
+                मंजुल मंगल मूल बाम अंग फरकन लगे ॥</p>
+            </div>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500">
+            <p>&copy; <span id="year"></span> भक्ति-सागर | सभी अधिकार सुरक्षित</p>
+        </footer>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
